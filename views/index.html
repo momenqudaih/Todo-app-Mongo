@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>To Do List</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+
+    <body>
+        <div class="box" id="heading">
+            <h1>Todo App</h1>
+        </div>
+
+        <div class="box">
+            <div>
+                <form>
+                    <!-- <div class="item">
+                    <input class="doneBtn" type="checkbox" name="checkbox" value="1">
+                    <p>
+                        My first Task
+                    </p>
+                </div>
+                <input type="hidden" name="listName"></input> -->
+                </form>
+            </div>
+            <form class="item">
+                <input
+                    type="text"
+                    name="newItem"
+                    placeholder="New Item"
+                    autocomplete="off"
+                    class="taskInput"
+                />
+                <button class="addBtn" type="submit" name="list" value="">
+                    +
+                </button>
+            </form>
+        </div>
+        <footer>Copyright 2023 Momen Qudaih</footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/getAllTasks.js"></script>
+        <script src="./js/addTask.js"></script>
+        <script src="./js/deleteTask.js"></script>
+    </body>
+</html>
